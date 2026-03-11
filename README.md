@@ -53,7 +53,7 @@ Examine the image and return a completed JSON object based on this template:
 | Gemini 3 Flash 🧠               | 7.8          | $3.57     | 2/2 ✅   | 2/2      | 2/2       | 0/2      | 0/2 ❌ | 6        |
 | GPT 5.3 Codex 🧠                | 10           | $12.05 ⚠️  | 0/2     | 2/2      | 2/2       | 0/2      | 2/2  | 6        |
 | ChatGPT 5.4 🧠                  | 113 ⚠️        | N/A       | 1/2     | 2/2      | 2/2       | 0/2      | 1/2  | 6        |
-| Perplexity GPT 5.4 🧠           | N/A          | N/A       | 0/2     | 2/2      | 2/2       | 0/2      | 2/2  | 7        |
+| Perplexity GPT 5.4 🧠           | N/A          | N/A       | 0/2     | 2/2      | 2/2       | 0/2      | 2/2  | 6        |
 | Perplexity Gemini 3.1 Pro 🧠    | N/A          | N/A       | 2/2 ✅   | 2/2      | 2/2       | 0/2      | 2/2  | **8**    |
 
 ¹ The only model to use German locale for writing dates (11.03.2026). Since I didn't specify a format, I count this as correct.
@@ -71,4 +71,3 @@ Examine the image and return a completed JSON object based on this template:
 - Even bleeding edge, high-end open weights models (Kimi 2.5, Qwen 3.5 397B A17B) struggle with visual reasoning.
 - After  generating 7,100+ (!) tokens, the largest Qwen model with 397 billion parameters only scored 1/5, which is the same as its  9b equivalent.
 - I found it suprising that every single LLM could find the Windows keyboard language, but only *Qwen 3.5 27b* and *GPT 5.3 Codex* were able to determine the date consistently, which is in a close proximity to the keyboard language indicator, a similar font size and basically equally readable for most people.
-- Personally, I am suprised by *Gemini 3 Flash (Thinking)*'s performance considering its relatively low cost & duration.

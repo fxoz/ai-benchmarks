@@ -36,25 +36,26 @@ Examine the image and return a completed JSON object based on this template:
 
 *Legend:*
 
-🧠 = reasoning/thinking enabled | 🕊️ = open weights model | ⚠️ = unusually high values | ✅ only few models got this right | ❌ only few models got this wrong
+🧠 = reasoning/thinking enabled | 🌿 = open weights model | ⚠️ = unusually high values | ✅ only few models got this right | ❌ only few models got this wrong
 
 *Cost\*1000* = Average cost per response, all (input, output tokens, etc.) inclusive, multiplied by 1000
 
 *ChatGPT* = as per the popular UI on chatgpt.com. / *Perplexity* = as per the UI on perplexity.ai. All other models were ran on OpenRouter!
 
-| Model                          | Duration (s) | Cost*1000 | DAW BPM | Kbd Lang | YT Locale | Video ID | Date | SCORE/10 |
-|--------------------------------|--------------|-----------|---------|----------|-----------|----------|------|----------|
-| Qwen 3.5 9b 🧠🕊️                 | 8.8          | $0.27     | 0/2     | 2/2      | 0/2 ❌     | 0/2      | 0/2 ❌ | 2        |
-| Kimi 2.5 🧠🕊️                    | 131 ⚠️        | $15.96 ⚠️  | 0/2     | 2/2      | 0/2 ❌     | 0/2      | 1/2  | 3        |
-| Qwen 3.5 397B A17B 🧠🕊️          | 95.5 ⚠️       | $16.53 ⚠️  | 0/2     | 2/2      | 1/2       | 0/2      | 0/2 ❌ | 3        |
-| Qwen 3.5 27b 🧠🕊️                | 6.8          | $2.11     | 0/2     | 2/2      | 0/2 ❌     | 0/2      | 2/2  | 4        |
-| Gemini 3 Flash                 | 0.1          | $0.89     | 0/2     | 2/2      | 2/2       | 0/2      | 0/2 ❌ | 4        |
-| Perplexity Claude Sonnet 4.6 🧠 | N/A          | N/A       | 0/2     | 2/2      | 0/2 ❌     | 0/2      | 2/2¹  | 4        |
-| Gemini 3 Flash 🧠               | 7.8          | $3.57     | 2/2 ✅   | 2/2      | 2/2       | 0/2      | 0/2 ❌ | 6        |
-| GPT 5.3 Codex 🧠                | 10           | $12.05 ⚠️  | 0/2     | 2/2      | 2/2       | 0/2      | 2/2  | 6        |
-| ChatGPT 5.4 🧠                  | 113 ⚠️        | N/A       | 1/2     | 2/2      | 2/2       | 0/2      | 1/2  | 6        |
-| Perplexity GPT 5.4 🧠           | N/A          | N/A       | 0/2     | 2/2      | 2/2       | 0/2      | 2/2  | 6        |
-| Perplexity Gemini 3.1 Pro 🧠    | N/A          | N/A       | 2/2 ✅   | 2/2      | 2/2       | 0/2      | 2/2  | **8**    |
+| Model                           | Duration (s) | Cost*1000 | DAW BPM | Kbd Lang | YT Locale | Video ID | Date   | SCORE/10 |
+| ------------------------------- | ------------ | --------- | ------- | -------- | --------- | -------- | ------ | -------- |
+| Qwen 3.5 9b 🧠🕊️               | 8.8          | $0.27     | ❌ 0/2   | ✅ 2/2    | ❌ 0/2     | ❌ 0/2    | ❌ 0/2  | 2        |
+| Kimi 2.5 🧠🕊️                  | 131 ⚠️       | $15.96 ⚠️ | ❌ 0/2   | ✅ 2/2    | ❌ 0/2     | ❌ 0/2    | ❔ 1/2  | 3        |
+| Qwen 3.5 397B A17B 🧠🕊️        | 95.5 ⚠️      | $16.53 ⚠️ | ❌ 0/2   | ✅ 2/2    | ❔ 1/2     | ❌ 0/2    | ❌ 0/2  | 3        |
+| Qwen 3.5 27b 🧠🕊️              | 6.8          | $2.11     | ❌ 0/2   | ✅ 2/2    | ❌ 0/2     | ❌ 0/2    | ✅ 2/2  | 4        |
+| Gemini 3 Flash                  | 0.1          | $0.89     | ❌ 0/2   | ✅ 2/2    | ✅ 2/2     | ❌ 0/2    | ❌ 0/2  | 4        |
+| Perplexity Claude Sonnet 4.6 🧠 | N/A          | N/A       | ❌ 0/2   | ✅ 2/2    | ❌ 0/2     | ❌ 0/2    | ✅ 2/2¹ | 4        |
+| Gemini 3 Flash 🧠               | 7.8          | $3.57     | ✅ 2/2   | ✅ 2/2    | ✅ 2/2     | ❌ 0/2    | ❌ 0/2  | 6        |
+| GPT 5.3 Codex 🧠                | 10           | $12.05 ⚠️ | ❌ 0/2   | ✅ 2/2    | ✅ 2/2     | ❌ 0/2    | ✅ 2/2  | 6        |
+| ChatGPT 5.4 🧠                  | 113 ⚠️       | N/A       | ❔ 1/2   | ✅ 2/2    | ✅ 2/2     | ❌ 0/2    | ❔ 1/2  | 6        |
+| Perplexity GPT 5.4 🧠           | N/A          | N/A       | ❌ 0/2   | ✅ 2/2    | ✅ 2/2     | ❌ 0/2    | ✅ 2/2  | 6        |
+| Perplexity Gemini 3.1 Pro 🧠    | N/A          | N/A       | ✅ 2/2   | ✅ 2/2    | ✅ 2/2     | ❌ 0/2    | ✅ 2/2  | **8**    |
+
 
 ¹ The only model to use German locale for writing dates (11.03.2026). Since I didn't specify a format, I count this as correct.
 
